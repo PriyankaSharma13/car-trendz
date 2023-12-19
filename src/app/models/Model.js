@@ -5,7 +5,7 @@ const ModelSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    brand: {
+    brand_id: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Brand',
         required: true,

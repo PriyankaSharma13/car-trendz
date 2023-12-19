@@ -1,5 +1,5 @@
-import { FaHome, FaSignOutAlt, FaUser, FaTable } from "react-icons/fa";
-import { IoMdSettings } from "react-icons/io";
+import { FaHome, FaSignOutAlt, FaUser, FaTable} from "react-icons/fa";
+import { IoMdSettings,IoLogoModelS } from "react-icons/io";
 import React, { useState } from "react";
 import Link from "next/link";
 
@@ -16,6 +16,7 @@ const Sidebar = ({ isOpen }: any) => {
     { icon: <FaHome />, link: `${prefix}/dashboard`, text: "Dashboard" },
     { icon: <FaUser />, link: `${prefix}/users`, text: "Users" },
     { icon: <FaTable />, link: `${prefix}/brands`, text: "Brands" },
+    { icon: <IoLogoModelS  />, link: `${prefix}/models`, text: "Models" },
     {
       icon: <IoMdSettings />,
       link: `${prefix}/settings`,
